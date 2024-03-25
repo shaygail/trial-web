@@ -1,0 +1,194 @@
+body {
+    font-family: "GeneralSans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E6E6E6;
+    overflow: none;
+  }
+  
+  nav {
+    background-color: #E6E6E6;
+    color: #fff;
+    padding: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-left {
+    display: flex;
+    width: fit-content;
+    height: 45px;
+  }
+  
+  .nav-right {
+    width: fit-content;
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    font-family: "GeneralSans", sans-serif;
+    padding-right: 1rem;
+  }
+  
+  .nav-right a {
+    margin-left: 10px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+  
+  .header img {
+    max-width: 70%;
+    margin: 10px;
+    justify-content: center;
+  }
+  .animated-left{
+    font-size: 100px;
+    margin-bottom: 0%;
+    text-align: center;
+    margin-right: auto;
+  }
+  .animated-right{
+    font-size: 100px;
+    margin-top: 0;
+    text-align: justify;
+    padding-left: 10rem;
+    justify-content: center;
+  }
+  .content {
+    text-align: center;
+    margin: auto;
+    max-width: 1000px;
+  }
+  
+  .description {
+    margin-top: 20px;
+  }
+  
+  .button-animated{
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background-color: #8C8C71;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  .text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    white-space: nowrap;
+    animation: move-rt1 20s linear infinite;
+    -webkit-text-stroke-width: 0.1px;
+    letter-spacing: 1px;
+    color: #8C8C73;
+    font-size: 16px;
+    padding: 3rem 1rem;
+}
+
+  /* For screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    nav {
+      flex-direction: row;
+      text-align: justify;
+    }
+  
+    .nav-left {
+      margin-bottom: 5x;
+      height: 20px;
+    }
+    .nav-right{
+      padding-left: 1rem;
+    }
+  
+    .header img {
+      display: none;
+    }
+    .animated-left {
+      margin-top: 40%;
+      font-size: 35px;
+      padding-left: 2rem;
+      margin-bottom: 0;
+      text-align: left;
+    }
+    .animated-right {
+      margin-top: 0;
+      font-size: 35px;
+
+      padding-left: 2REM;
+      text-align: left;
+    }
+    .description{
+      padding-left: 2rem;
+      text-align: left;
+    }
+    .button-animated{
+      text-align: left;
+    }
+
+  }
+  
+  /* For screens larger than 768px (typical desktop screens) */
+  @media (min-width: 1400px) {
+    nav {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .header img {
+      max-width: 100%;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .header img{
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+    animation-delay: 0.3s;
+  }
+  .animated-left{
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+  }
+  .animated-right{
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+  }
+  
+  .description {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s; /* Add a delay to stagger the animation */
+  }
+  
+
+@keyframes move-rt1 {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
