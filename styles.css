@@ -96,9 +96,10 @@ body {
     padding: 3rem 1rem;
 }
 .fixed-element {
+  position: fixed;
   left: 0;
   right: 0;
-  width: 100vw; /* Full viewport width, but avoid causing horizontal scroll */
+  width: 100%;
 }
 
   /* For screens smaller than 768px (typical mobile devices) */
